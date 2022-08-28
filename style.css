@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+
+body{
+    background-color: #5f6161;
+    zoom: 150%;
+}
+
+p{
+font-family: "Montserrat", sans-serif;
+
+    
+}
+
+
+
+#escolha1, #escolha2, #escolha3{
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  
+}
+
+#tituloEscolha{
+    margin-bottom: 0px;
+}
+
+
+
+::-webkit-scrollbar {
+    display: none;
+    }
+
+.container{
+  box-shadow: -10px 6px 20px 5px rgba(0,0,0,0.63);
+
+    margin-top: 10px;
+    top: 40px;
+    
+    height: 100%;
+    
+  width: 600px;
+    text-align: center;
+    overflow: scroll;
+}
+
+#titulo{
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+
+
+#tituloPrincipal{
+    margin-top: 10px;
+  margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+#autor{
+
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#numeroVersiculo{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+#textoVersiculo{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#corpo{
+  float: left;
+}
+
+.escolhas{
+  display: grid;
+}
+
+
+
+
+:root {
+  --colorBackground: #292c35!important;
+  --colorForeground: lightgray;
+  --colorLink: cornflowerblue;
+  --colorCode: lightpink;
+}
+
+.dark {
+  --colorBackground: #cac4c4;
+  --colorForeground: #2d2f2f;
+  --colorLink: royalblue;
+  --colorCode: crimson;
+  
+}
+
+#botao{
+
+  background-color: var(--colorBackground);
+  color: var(--colorForeground);
+  border-color: var(--colorForeground);
+  margin-bottom: 0px;
+    margin-left: 60px;
+}
+
+body {
+  background-color: var(--colorBackground);
+  color: var(--colorForeground);
+}
+
+a {
+  color: var(--colorLink);
+}
+
+code {
+  color: var(--colorCode);
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+  #titulo{
+    font-size: 40px;
+}
+  body{
+
+    zoom: 100%;
+}
+}
+
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1d1f20;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #a29a9a;
+  
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2c2e30;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
