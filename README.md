@@ -1,5 +1,5 @@
 # Minha Bíblia
-Projeto web de bíblia. Simples feito com HTML/JS/CSS, que consome API externa. 
+Projeto web de bíblia simples, feito com HTML/JS/CSS, que consome API externa. 
 
 
 ## Live Preview
